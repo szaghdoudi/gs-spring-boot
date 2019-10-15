@@ -37,6 +37,7 @@
         <java.version>1.8</java.version>
     </properties>
 
+
     <build>
         <plugins>
             <plugin>
@@ -56,5 +57,17 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Releases</name>
+            <url>http://localhost:8881/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Snapshot</name>
+            <url>http://localhost:8881/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
